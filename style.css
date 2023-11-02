@@ -19,6 +19,40 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.logo {
+  position: absolute;
+  left: 5rem;
+  top: 3rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #f2f5f9;
+  border-radius: 1rem;
+}
+
+.card > .dot {
+  position: absolute;
+  background-color: #364153;
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translate(-27px, -24px);
+}
+
+.button-group {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -55,10 +89,9 @@ input::placeholder {
   font-weight: 600;
 }
 
-.input-group > .btn {
+.btn {
   padding: 12px 20px;
   margin: 8px 0;
-  margin-left: -107px;
   display: inline-block;
   border: none;
   border-radius: 4px;
